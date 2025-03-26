@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Tarea2025-03-26_"/>
+        <attribute name="authors" value="iMile"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-25 11:24:29 p. m."/>
+        <attribute name="created" value="aU1pbGU7REVTS1RPUC0wMktISTdNOzIwMjUtMDMtMjQ7MDg6MDA6MjEgcC4gbS47Mjk5MA=="/>
+        <attribute name="edited" value="aU1pbGU7REVTS1RPUC0wMktISTdNOzIwMjUtMDMtMjQ7MDg6NTA6MDEgcC4gbS47MTszMTAx"/>
+        <attribute name="edited" value="c29maWE7U09GSUxBUDsyMDI1LTAzLTI1OzExOjI0OjI5IHAuIG0uOzE7MjYzNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="donas" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#191;cuantas donas compro?&quot;" newline="True"/>
+            <input variable="donas"/>
+            <if expression="donas&#8805;30">
+                <then>
+                    <if expression="donas&#8805;50">
+                        <then>
+                            <declare name="preciodescuento2" type="Integer" array="False" size=""/>
+                            <assign variable="preciodescuento2" expression="(donas*10)-(donas*2)"/>
+                            <output expression="&quot;el precio total es:&quot;" newline="True"/>
+                            <output expression="preciodescuento2" newline="True"/>
+                        </then>
+                        <else>
+                            <declare name="preciodescuento1" type="Integer" array="False" size=""/>
+                            <assign variable="preciodescuento1" expression="(donas*10)-(donas*1)"/>
+                            <output expression="&quot;el precio total es:&quot;" newline="True"/>
+                            <output expression="preciodescuento1" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <declare name="preciodonasnormal" type="Integer" array="False" size=""/>
+                    <assign variable="preciodonasnormal" expression="donas*10"/>
+                    <output expression="&quot;el precio total es:&quot;" newline="True"/>
+                    <output expression="preciodonasnormal" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
