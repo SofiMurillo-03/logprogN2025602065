@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="inciso a"/>
+        <attribute name="authors" value="sofia"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 08:37:02 p. m."/>
+        <attribute name="created" value="c29maWE7U09GSUxBUDsyMDI1LTA0LTA4OzA4OjIyOjE3IHAuIG0uOzI1Mjk="/>
+        <attribute name="edited" value="c29maWE7U09GSUxBUDsyMDI1LTA0LTA4OzA4OjM3OjAyIHAuIG0uOzE7MjYzNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, f" type="Integer" array="False" size=""/>
+            <assign variable="f" expression="1"/>
+            <assign variable="i" expression="1"/>
+            <output expression="&quot;Digite un numero entero&quot;" newline="True"/>
+            <input variable="n"/>
+            <while expression="i&lt;=n">
+                <assign variable="f" expression="f*i"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="&quot;el numero factorial es:&quot;" newline="True"/>
+            <output expression="f" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

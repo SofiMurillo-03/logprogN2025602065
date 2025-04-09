@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="inciso b"/>
+        <attribute name="authors" value="sofia"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 08:50:15 p. m."/>
+        <attribute name="created" value="c29maWE7U09GSUxBUDsyMDI1LTA0LTA4OzA4OjM3OjMyIHAuIG0uOzI1MzI="/>
+        <attribute name="edited" value="c29maWE7U09GSUxBUDsyMDI1LTA0LTA4OzA4OjUwOjE1IHAuIG0uOzE7MjYzNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, i, n3" type="Integer" array="False" size=""/>
+            <assign variable="n1" expression="1"/>
+            <assign variable="n2" expression="2"/>
+            <assign variable="i" expression="1"/>
+            <while expression="i&lt;=64">
+                <output expression="n1" newline="False"/>
+                <output expression="&quot; , &quot;" newline="False"/>
+                <assign variable="n3" expression="n1+n2"/>
+                <assign variable="n1" expression="n2"/>
+                <assign variable="n2" expression="n3"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
